@@ -61,10 +61,8 @@
 
 import React from 'react';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
+import Link from '@material-ui/core/Link';
 import NativeSelect from '@material-ui/core/NativeSelect';
 import InputBase from '@material-ui/core/InputBase';
 import LanguageIcon from '@material-ui/icons/Language';
@@ -130,12 +128,12 @@ export default function CustomizedSelects() {
                 </NativeSelect>
             </FormControl>
             <p style={{ color: 'white' }}>
-                <a>Australia</a>
-                <a style={{ paddingLeft: "10px" }}> Brazil</a>
-                <a style={{ paddingLeft: "10px" }}> Canada</a>
-                <a style={{ paddingLeft: "10px" }} > China</a>
-                <a style={{ paddingLeft: "10px" }} > France</a>
-                <a style={{ paddingLeft: "10px" }}> United States</a>
+                <Link href="#"  color="inherit">Australia</Link>
+                <Link href="#" color="inherit" style={{ paddingLeft: "10px" }}> Brazil</Link>
+                <Link href="#" color="inherit" style={{ paddingLeft: "10px" }}> Canada</Link>
+                <Link href="#" color="inherit" style={{ paddingLeft: "10px" }} > China</Link>
+                <Link href="#" color="inherit" style={{ paddingLeft: "10px" }} > France</Link>
+                <Link href="#" color="inherit" style={{ paddingLeft: "10px" }}> United States</Link>
             </p>
         </div>
     );

@@ -14,7 +14,7 @@ const useStyles = makeStyles({
 
         width: '100%',
         position: 'fixed',
-        bottom: '5%',
+        bottom: '5vh',
         height:'15%',
         paddingTop:'2%',
         backgroundColor: 'rgb(35,47,62)'
