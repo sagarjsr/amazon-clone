@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import Navbar from './layouts/Navbar';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Login from './components/Login';
+import Footer from './layouts/Footer';
 // import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 const  App = () => {
@@ -9,8 +10,9 @@ const  App = () => {
     <Fragment>
       <Navbar />
     <Router>
-    <Route exact='/login' component={Login} />
+    
     </Router>
+    <Footer/>
      
     </Fragment>
 
