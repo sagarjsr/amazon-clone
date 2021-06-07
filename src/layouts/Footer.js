@@ -6,7 +6,6 @@ import CopyrightIcon from '@material-ui/icons/Copyright';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import { Fragment } from 'react';
-import Footerbrandlogo from '../assets/brandLogo.png';
 import UpperFooter from './UpperFooter'
 
 const useStyles = makeStyles({
@@ -44,7 +43,7 @@ export default function Footer() {
                 }}
                 showLabels
                 className={classes.upperFooter}>
-                <img className={classes.title} src={Footerbrandlogo} alt="barnd_logo" width="220" height="80" /> 
+                <img className={classes.title} src={'assets/brandLogo.png'} alt="barnd_logo" width="220" height="80" /> 
                 <UpperFooter />
             </BottomNavigation>   
              <BottomNavigation

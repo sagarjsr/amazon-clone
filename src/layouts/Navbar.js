@@ -14,10 +14,8 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import brandlogo from '../assets/brandLogo.png';
-import india_header_logo from '../assets/india_header_logo.png';
+import Link from '@material-ui/core/Link';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -189,9 +187,9 @@ const Navbar = () => {
                     >
                         <MenuIcon />
                     </IconButton>
-
-                    <img className={classes.title} src={brandlogo} alt="barnd_logo" width="220" height="60" />
-
+                    <Link href='/' color="inherit">
+                    <img className={classes.title} src={'assets/brandLogo.png'} alt="barnd_logo" width="220" height="60" />
+                    </Link>
                     <div className={classes.search}>
                         <div className={classes.searchIcon}>
                             <SearchIcon />
@@ -207,7 +205,7 @@ const Navbar = () => {
                     <div className={classes.grow} />
                     <div className={classes.sectionDesktop}>
                         <div>
-                            <img src={india_header_logo} style={{ paddingRight: '50px', paddingTop: '16px' }} alt='india_logo' width="50" height="26" />
+                            <img src={'assets/india_header_logo.png'} style={{ paddingRight: '50px', paddingTop: '16px' }} alt='india_logo' width="50" height="26" />
                         </div>
                         <div style={{ paddingRight: '40px' }} onClick={(handleOrer) => { alert('clicked') }}>
                             <p style={{ paddingRight: "5px", fontSize: "small" }}>Hello, Name</p>
